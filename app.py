@@ -6,10 +6,6 @@ import requests
 
 @route('/create_ticket', method=['GET', 'POST'])
 def handle_form():
-    # if 'verified_email' in request.cookies:
-    #     ask_email = False
-    # else:
-    #     ask_email = True
     status = ''
     if request.POST:
         # Get the form data
