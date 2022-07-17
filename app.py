@@ -32,8 +32,6 @@ def handle_form():
         
     return template('ticket_form', feedback = status)
     
-
-
 @route('/css/<filename>')
 def send_css(filename):
     return static_file(filename, root='static/css')
